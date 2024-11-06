@@ -1,0 +1,114 @@
+.first{
+    position:sticky;
+    z-index: 0;
+    left:0;
+    top:0;
+    justify-content: space-around;
+   display: flex;
+   background:white;
+   font-size: 20px;
+   color: black;
+
+}
+
+
+
+.container2{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+.item1{
+    flex-basis: 50%;
+}
+
+.item2{
+    flex-basis: 50%;
+    justify-content: center;
+    margin: 10px;
+}
+
+.item2 #para{
+    color: rgb(94, 74, 74);
+}
+
+.container3{
+    display: flex;
+}
+
+.container3,.item1{
+    flex-basis: 50%;
+    padding: 10px;
+    margin: 20px;
+}
+
+.container3,.item2{
+    flex-basis: 50%;
+}
+
+#para1,#para2,#para3,#para4,#para5{
+    color: rgb(94, 74, 74);
+}
+
+
+.container4{
+    margin: 50px;
+}
+
+.container4 #item1{
+    color: rgb(94, 74, 74);
+}
+
+input{
+    padding: 30px;
+    width: 90%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin: 10px;
+}
+
+
+button{
+    padding: 10px;
+}
+
+
+.foot{
+    margin: 20px;
+    padding: 20px;
+background-color: whitesmoke;
+width: 1000px;
+height: 100px;
+text-align: center;
+color: black;
+}
+
+
+.first,#item1,#item2,#item3{
+    color: black;
+}
+
+@media screen and (width<576px) {
+
+    .container2{
+        flex-direction: column;
+    }
+
+    .container3{
+        flex-direction: column;
+    }
+
+    .container4{
+        flex-direction: column;
+    }
+    .foot{
+        flex-direction: column;
+        width: 100%;
+    }
+    .button{
+        align-items: center;
+    }
+}
